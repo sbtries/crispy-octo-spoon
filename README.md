@@ -10,7 +10,7 @@ This README to document steps & process for setting up Rails project
 * ``` bin/rails server ``` -> runs the server
 * create controller: ``` bin/rails generate controller ControllerName index(is this an action?) --skip-routes(IF the route was already created!) ```
 * create model: ``` bin/rails generate model ControllerName title:string body:text ```
-    * creates models/name.rb, models/name_test.rb, rest/fixture/names.yml   
+    * creates models/name.rb, models/name_test.rb, rest/fixture/names.yml, and a migrate/migrations file   
 # random notes: 
 * 
 # Edit as you go: 
