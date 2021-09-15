@@ -16,6 +16,7 @@ This README to document steps & process for setting up Rails project
 * Launch console, interactive env to interact with model``` bin/rails console ``` !ctrl+ D to exit console!
 * 
 # random notes: 
+* ERB is a templating system that evaluates Ruby code embedded in a document.
 * 
 # Edit as you go: 
 * System dependencies:
