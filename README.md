@@ -8,6 +8,7 @@ This README to document steps & process for setting up Rails project
 # to start project: 
 * rails new "project name" -> will create directory to hold project
 * *bin/rails server -> runs the server
+* create controller: bin/rails generate controller ControllerName index(is this an action?) --skip-routes(IF the route was already created!)
 
 # random notes: 
 * 
