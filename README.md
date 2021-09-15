@@ -9,6 +9,9 @@ This README to document steps & process for setting up Rails project
 * rails new "project name" -> will create directory to hold project
 * *bin/rails server -> runs the server
 
+# random notes: 
+* 
+# Edit as you go: 
 * System dependencies:
 
 * Configuration
