@@ -13,7 +13,7 @@ This README to document steps & process for setting up Rails project
 * create model: ``` bin/rails generate model ControllerName title:string body:text ``` -> title & body adds columns to the model
     * creates models/name.rb, models/name_test.rb, rest/fixture/names.yml, and a migrations file  
 * ``` bin/rails db:migrate ``` migrates! 
-* Launch console, interactive env to interact with model``` bin/rails console ```
+* Launch console, interactive env to interact with model``` bin/rails console ``` !ctrl+ D to exit console!
 * 
 # random notes: 
 * 
