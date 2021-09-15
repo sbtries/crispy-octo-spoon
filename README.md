@@ -17,7 +17,8 @@ This README to document steps & process for setting up Rails project
 * 
 # random notes: 
 * ERB is a templating system that evaluates Ruby code embedded in a document.
-* 
+    * ``` <% %> ``` tag means "evaluate the enclosed Ruby code." 
+    * ``` <%= %> ``` tag means "evaluate the enclosed Ruby code, and output the value it returns.
 # Edit as you go: 
 * System dependencies:
 
