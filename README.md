@@ -21,6 +21,7 @@ This README to document steps & process for setting up Rails project
     * ``` <%= %> ``` tag means "evaluate the enclosed Ruby code, and output the value it returns.
 * routes look like: ```   get "/articles/:id", to: "articles#show" ``` for a unique/detail route
     * id param is accessible as params[:id] in the show action of ArticlesController
+* FORMS: form_with is a form builder
 # Edit as you go: 
 * System dependencies:
 
