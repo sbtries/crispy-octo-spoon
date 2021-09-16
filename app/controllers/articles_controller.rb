@@ -23,13 +23,34 @@ class ArticlesController < ApplicationController
       #redisplays the form by rendering app/views/articles/new.html.erb
       render :new
     end
-end
+  end
+
+  def edit #fetches the article from the database, and stores it in @article
+    @article = Article.find(params[:id])
+  end
+  def update
+    @article = Article.find(params[:id])
+
+    if @article.update(article_params)
+      redirect_to @article
+    else
+      render :edit
+       # *** by DEFAULT new action will render app/views/articles/edit.html.erb
+      end
+    end
+    
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    redirect_to root_path
+  end
 
   private
-  def article_params
-    params.require(:article).permit(:title, :body)
-  end
-  end
+    def article_params
+      params.require(:article).permit(:title, :body)
+    end
+end
 
 # When an action does not explicitly render a view 
 # (or otherwise trigger an HTTP response), 
