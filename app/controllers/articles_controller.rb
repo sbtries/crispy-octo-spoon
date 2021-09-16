@@ -1,5 +1,10 @@
 class ArticlesController < ApplicationController
   def index
+    @articles = Article.all
+  end
+  def show
+    @article = Article.find(params[:id]) #instance variable, accessible by view
+    # *** By DEFAULT, the show action will render app/views/articles/show.html.erb.
   end
 end
 
