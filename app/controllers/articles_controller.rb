@@ -13,7 +13,8 @@ class ArticlesController < ApplicationController
   end
 
   def create # instantiates a new article with values for the title and body, and attempts to save it
-    @article = Article.new(title: "...", body: "...")
+    # @article = Article.new(title: "...", body: "...")
+    @article = Article.new(article_params) # using article_params to filter & require strong params
 
     if @article.save
       # if successful, redicts to article's page ("http://localhost:3000/articles/#{@article.id}")
@@ -22,9 +23,13 @@ class ArticlesController < ApplicationController
       #redisplays the form by rendering app/views/articles/new.html.erb
       render :new
     end
-
-
 end
+
+  private
+  def article_params
+    params.require(:article).permit(:title, :body)
+  end
+  end
 
 # When an action does not explicitly render a view 
 # (or otherwise trigger an HTTP response), 
