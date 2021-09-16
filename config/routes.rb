@@ -11,7 +11,9 @@ Rails.application.routes.draw do
 # also allows: - use of helper methods that keeps routes on a more fluid config (ex:<a href="<%= article_path(article) %>">)
 #              - use of link_to which calls path helper to convert object to a path (ex:<%= link_to article.title, article %>)
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
